@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b36d7bc04c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Baljit Sokhi</title>
 </head>
 <body>
     <header>
 
-        <div class="navBar">
+        <div class="navBar largeWrapper">
             <div class="logo">
-                <!-- logo here -->
+                LOGO
             </div>
             <nav>
                 <ul>
@@ -25,31 +27,56 @@
             </nav>
         </div>
 
-        <h1>Baljit Sokhi</h1>
-        <h2>Front End Developer</h2>
+        <div class="hero wrapper">
+            <h1>Baljit Sokhi</h1>
+            <h2>Front End Developer</h2>
+        </div>
     </header>
 
     <main>
         
-        <section class="bio">
+        <section class="bio wrapper">
             <!-- profile image -->
             <img src="./assets/IMG_3641.JPG" alt="Profile image of Baljit Sokhi.">
             <!-- bio info -->
+            <p>I am a front end developer with a strong managerial and healthcare background that has helped reinforce my communication
+            and analytical skills. My love for creating user-friendly applications sparked when ideas came to mind on how to improve
+            our clinic software system. My interests also include dancing/teaching hip- hop and salsa, watching Anime, and biking.</p>
 
             <button>Learn More</button>
         </section>
 
-        <section class="skills">
-            <!-- animation? -->
+        <section class="skills wrapper">
+            <h2>Skills</h2>
+            
+            <div class="skills">
+                <ul class="skillsList">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3"></i></li>
+                    <li><i class="fab fa-sass"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="devicon-jquery-plain colored"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-git-alt"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                </ul>
+            
+            </div>
 
         </section>
 
-        <section class="projects">
+        <section class="projects wrapper">
+            <h2>My Work</h2>
             <div class="project1">
                 <!-- project preview -->
                 <!-- project title and description - tech used -->
                 <!-- project link -->
                 <!-- project git hub link -->
+                <h3>What The Colour?!</h3>
+                <p>HTML5 | CSS3 | Sass | JavaScript</p>
+                <p>Created an interactive app that allows users to test out wall paint colours with selections of furniture and floor shades using jQuery</p>
+                <a href="https://bksokhi.github.io/WhatTheColour/">Project Link</a>
+                <a href="https://github.com/bksokhi/WhatTheColour">GitHub Link</a>
             </div>
 
             <div class="project2">
@@ -57,6 +84,12 @@
                 <!-- project title and description - tech used -->
                 <!-- project link -->
                 <!-- project git hub link -->
+                <h3>Rugged//Footprints Shop</h3>
+                <p>HTML5 | CSS3 | React | Firebase</p>
+                <p>Developed an e-commerce app that allows the user to select and remove photography print orders using React and Firebase</p>
+                <a href="https://bksokhi.github.io/ruggedFootprintsShop/">Project Link</a>
+                <a href="https://github.com/bksokhi/ruggedFootprintsShop">GitHub Link</a>
+
             </div>
 
             <div class="project3">
@@ -64,11 +97,16 @@
                 <!-- project title and description - tech used -->
                 <!-- project link -->
                 <!-- project git hub link -->
+                <h3>Word Party</h3>
+                <p>HTML5 | CSS3 | React | Firebase | APIs</p>
+                <p>Working with a team of fellow developer, we created an app that provides synonyms or rhyming words based on user input. Words are pulled from an API, and saved words are stored in Firebase.</p>
+                <a href="https://wordparty.github.io/wordParty/">Project Link</a>
+                <a href="https://github.com/wordParty/wordParty">GitHub Link</a>
             </div>
           
         </section>
 
-        <section class="blog">
+        <section class="blog wrapper">
             <!-- link to medium blogs? -->
         </section>
 
@@ -76,14 +114,23 @@
 
     <footer>
         <!-- contact info -->
+        <section class="contact wrapper">
+            <ul class="contactList">
+                <li><a href="https://twitter.com/Baljit_S26"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/baljitsokhi/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/bksokhi"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://medium.com/@sokhibaljit"><i class="fab fa-medium-m"></i></a></li>
+            </ul>
+        </section>
         <!-- social links -->
         <!-- resume download -->
+        <p>© Baljit Sokhi 2020</p>
     </footer>
 
 
 </body>
 
-<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="./scripts.js"></script>
 </html>
