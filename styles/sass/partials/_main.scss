@@ -1,30 +1,67 @@
+/////* bio */////
+.bio {
+    background-color: $greenBackground;
+    padding: 125px 0;
+    width: 100%;
+}
 
-/* nav bar */
-.navBar {
+.bioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bioContainer img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: -225px;
+}
+
+.bioContainer p {
+    width: 500px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 75px 0;
+}
+
+/////* skills */////
+.skills {
+    padding: 50px 0;
+}
+
+.skillsContainer {
     display: flex;
     justify-content: space-between;
 }
 
-/* header/hero */
-
-/* bio */
-
-img {
-    width: 400px;
-}
-
-/* skills */
 .skillsList {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
 }
 
-/* projects */
+.skillsList li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+}
+.skillsList i {
+    font-size: 5.5rem;
+    color: $black;
+}
 
-    /* project1 */
-    /* project2 */
-    /* project3 */
+/////* projects */////
 
-/* footer */
+    /////* project1 */////
+    /////* project2 */////
+    /////* project3 */////
+
+/////* footer */////
 .contactList{
     display: flex;
     justify-content: space-between;

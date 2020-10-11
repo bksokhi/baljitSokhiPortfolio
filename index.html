@@ -18,11 +18,10 @@
             </div>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <li><a href="#bio">About</a> </li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,48 +34,78 @@
 
     <main>
         
-        <section class="bio wrapper">
-            <!-- profile image -->
-            <img src="./assets/IMG_3641.JPG" alt="Profile image of Baljit Sokhi.">
-            <!-- bio info -->
-            <p>I am a front end developer with a strong managerial and healthcare background that has helped reinforce my communication
-            and analytical skills. My love for creating user-friendly applications sparked when ideas came to mind on how to improve
-            our clinic software system. My interests also include dancing/teaching hip- hop and salsa, watching Anime, and biking.</p>
+        <section class="bio" id="bio">
+            <div class="bioContainer wrapper">
+                <!-- profile image -->
+                <img src="./assets/IMG_3641.JPG" alt="Profile image of Baljit Sokhi.">
+                <!-- bio info -->
+                <p>I am a front end developer with a strong managerial and healthcare background that has helped reinforce my communication
+                and analytical skills. My love for creating user-friendly applications sparked when ideas came to mind on how to improve
+                our clinic software system. My interests also include dancing/teaching hip- hop and salsa, watching Anime, and biking.</p>
 
-            <button>Learn More</button>
+                <button>Learn More</button>
+            </div>
+            
         </section>
 
-        <section class="skills wrapper">
-            <h2>Skills</h2>
+        <section class="skills" id="skills">
+            <div class="skillsContainer wrapper">
+                <h2>Skills</h2>
             
-            <div class="skills">
                 <ul class="skillsList">
-                    <li><i class="fab fa-html5"></i></li>
-                    <li><i class="fab fa-css3"></i></li>
-                    <li><i class="fab fa-sass"></i></li>
-                    <li><i class="fab fa-js"></i></li>
-                    <li><i class="devicon-jquery-plain colored"></i></li>
-                    <li><i class="fab fa-react"></i></li>
-                    <li><i class="fab fa-git-alt"></i></li>
-                    <li><i class="fab fa-github"></i></li>
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="devicon-jquery-plain"></i>
+                        <p>jQuery</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </li>
                 </ul>
             
             </div>
 
         </section>
 
-        <section class="projects wrapper">
+        <section class="projects wrapper" id="projects">
             <h2>My Work</h2>
             <div class="project1">
                 <!-- project preview -->
                 <!-- project title and description - tech used -->
                 <!-- project link -->
                 <!-- project git hub link -->
-                <h3>What The Colour?!</h3>
-                <p>HTML5 | CSS3 | Sass | JavaScript</p>
-                <p>Created an interactive app that allows users to test out wall paint colours with selections of furniture and floor shades using jQuery.</p>
-                <a href="https://bksokhi.github.io/WhatTheColour/">Project Link</a>
-                <a href="https://github.com/bksokhi/WhatTheColour">GitHub Link</a>
+                <div class="projectContainer ">
+                    <h3>What The Colour?!</h3>
+                    <p>HTML5 | CSS3 | Sass | JavaScript</p>
+                    <p>Created an interactive app that allows users to test out wall paint colours with selections of furniture and floor shades using jQuery.</p>
+                    <a href="https://bksokhi.github.io/WhatTheColour/">Project Link</a>
+                    <a href="https://github.com/bksokhi/WhatTheColour">GitHub Link</a>
+
+                </div>
             </div>
 
             <div class="project2">
@@ -114,7 +143,7 @@
 
     <footer>
         <!-- contact info -->
-        <section class="contact wrapper">
+        <section class="contact wrapper" id="contact">
             <ul class="contactList">
                 <li><a href="https://twitter.com/Baljit_S26"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/baljitsokhi/"><i class="fab fa-linkedin-in"></i></a></li>
