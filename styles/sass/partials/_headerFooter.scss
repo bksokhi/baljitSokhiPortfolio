@@ -6,7 +6,7 @@
 
 /* header/hero */
 header {
-    height: 90vh;
+    height: 95vh;
 }
 
 .hero {
@@ -24,4 +24,14 @@ h1 {
 h2 {
     font-size: 2.5rem;
     letter-spacing: 5px;
+}
+
+/////* footer */////
+footer {
+    text-align: center;
+}
+
+.contactList{
+    display: flex;
+    justify-content: space-between;
 }

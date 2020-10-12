@@ -18,16 +18,20 @@
     margin-top: -225px;
 }
 
+.bioContainer h2 {
+    margin-top: 50px;
+}
+
 .bioContainer p {
     width: 500px;
     font-size: 1.5rem;
     text-align: center;
-    margin: 75px 0;
+    margin-bottom: 75px;
 }
 
 /////* skills */////
 .skills {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .skillsContainer {
@@ -56,13 +60,62 @@
 }
 
 /////* projects */////
+h3 {
+    font-size: 2.0rem;
+}
 
-    /////* project1 */////
-    /////* project2 */////
-    /////* project3 */////
+.projects h2{
+    padding: 50px 0;
+}  
 
-/////* footer */////
-.contactList{
+.projects h3 {
+    margin-top: 0;
+}
+
+.project1,
+.project2,
+.project3 {
+    background-color: $greenBackground;
+    margin-bottom: 200px;
+    padding: 50px 0;
+}
+
+.project1,
+.project3 {
+    margin-left: 10%;
+}
+
+.project2 {
+    margin-right: 10%;
+    text-align: right;
+}
+
+.projectContainer {
     display: flex;
     justify-content: space-between;
+}
+
+.projectInfo {
+    width: 40%;
+}
+
+.projectContainer img {
+    width: 100%;
+    border: 2px solid black;
+    margin-top: -100px;
+}
+
+.projectImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.project1 .projectImg,
+.project3 .projectImg {
+    margin-right: -50px;
+}
+.project2 .projectImg {
+    margin-left: -50px;
 }
