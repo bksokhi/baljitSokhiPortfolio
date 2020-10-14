@@ -22,12 +22,25 @@ button {
 ul {
     list-style: none;
     margin: 0;
+    padding: 0;
     text-transform: uppercase;
 }
+
+button {
+    border: none;
+    padding: none;
+    background: none;
+}
+
 
 a {
     text-decoration: none;
     color: $black;
+}
+
+a:hover,
+i:hover {
+    color: $greenStyle;
 }
 
 .largeWrapper {
