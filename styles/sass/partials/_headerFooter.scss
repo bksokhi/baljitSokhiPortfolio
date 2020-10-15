@@ -2,18 +2,30 @@
 
 header {
     height: 95vh;
-    // position: relative;
+    position: relative;
 }
 
 .banner {
-    border: 2px solid red;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: none;
 }
 
 .navBar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    align-items: center;
+    padding: 7px 0;
     font-size: 1.5rem;
+}
+
+.navBar img {
+    width: 50px;
+}
+
+.navBar i {
+    font-size: 25px;
 }
 
 .navMenu {
@@ -63,8 +75,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    justify-content: center;
     line-height: 30px;
+    height: 90%;
 }
 
 h1 {

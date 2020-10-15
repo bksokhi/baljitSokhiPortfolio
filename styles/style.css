@@ -305,10 +305,14 @@ i:hover {
 /* nav bar */
 header {
   height: 95vh;
+  position: relative;
 }
 
 .banner {
-  border: 2px solid red;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: none;
 }
 
 .navBar {
@@ -318,8 +322,19 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 0;
   font-size: 1.5rem;
+}
+
+.navBar img {
+  width: 50px;
+}
+
+.navBar i {
+  font-size: 25px;
 }
 
 .navMenu {
@@ -381,8 +396,11 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 30px;
+  height: 90%;
 }
 
 h1 {
@@ -471,6 +489,7 @@ footer {
 .bio h2,
 .projects h2 {
   position: relative;
+  display: inline-block;
 }
 
 .skills h2::after,
@@ -478,7 +497,7 @@ footer {
 .projects h2::after {
   position: absolute;
   content: '';
-  background: blue;
+  background: #b4c6be;
   height: 3px;
   margin: 0 auto;
   left: 0;

@@ -37,6 +37,7 @@
 .bio h2,
 .projects h2 {
     position: relative;
+    display: inline-block;
 }
 
 .skills h2::after,
@@ -44,13 +45,13 @@
 .projects h2::after {
     position: absolute;
     content: '';
-    background: blue;
+    background: $greenStyle;
     height: 3px;
     margin: 0 auto;
 	left: 0;
     right: 0;
     top: 30px;
-	width: 100%;
+    width: 100%;
 }
 
 .skillsContainer {

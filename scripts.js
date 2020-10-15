@@ -15,9 +15,9 @@ AOS.init();
         $(".burgerOpen").css({ display: "block" });
     });
 
-    // $(window).on("scroll", function () {
-    //     $(".banner").css({ "background": "green"});
-    //     // $(".burgerOpen").css({ color: "white" });
-    // });
+    $(window).on("scroll", function () {
+        $(".banner").css({ background: "rgba(13, 13, 13, 0.8)", color: "white", transition: "2s"});
+        $(".burgerOpen").css({ color: "white" });
+    });
 
 });
