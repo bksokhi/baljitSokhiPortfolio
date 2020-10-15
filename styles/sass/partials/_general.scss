@@ -6,7 +6,7 @@ html {
     letter-spacing: 1px;
     line-height: 20px;
     color: #0D0D0D;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     scroll-behavior: smooth;
 }
 
@@ -38,9 +38,15 @@ a {
     color: $black;
 }
 
+p {
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+
 a:hover,
 i:hover {
     color: $greenStyle;
+    transition: 0.5s;
 }
 
 .largeWrapper {

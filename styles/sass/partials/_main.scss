@@ -1,7 +1,7 @@
 /////* bio */////
 .bio {
     background-color: $greenBackground;
-    padding: 125px 0;
+    padding: 100px 0;
     width: 100%;
 }
 
@@ -24,14 +24,33 @@
 
 .bioContainer p {
     width: 500px;
-    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 20px;
 }
 
 /////* skills */////
 .skills {
     padding: 100px 0;
+}
+
+.skills h2,
+.bio h2,
+.projects h2 {
+    position: relative;
+}
+
+.skills h2::after,
+.bio h2::after,
+.projects h2::after {
+    position: absolute;
+    content: '';
+    background: blue;
+    height: 3px;
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+    top: 30px;
+	width: 100%;
 }
 
 .skillsContainer {
@@ -60,17 +79,16 @@
 }
 
 /////* projects */////
+.projects h2 {
+    margin-bottom: 100px;
+}
 h3 {
-    font-size: 2.0rem;
+    font-size: 2.5rem;
 }
 
-.projects h2{
+.projects{
     padding: 50px 0;
 }  
-
-.projects h3 {
-    margin-top: 0;
-}
 
 .project1,
 .project2,
@@ -83,6 +101,7 @@ h3 {
 .project1,
 .project3 {
     margin-left: 10%;
+    animation: fade-right;
 }
 
 .project2 {
@@ -93,6 +112,7 @@ h3 {
 .projectContainer {
     display: flex;
     justify-content: space-between;
+    // height: 300px;
 }
 
 .projectInfo {
@@ -101,7 +121,8 @@ h3 {
 
 .projectContainer img {
     width: 100%;
-    margin-top: -100px;
+    height: auto;
+    margin-top: -120px;
 }
 
 .projectImg {
@@ -111,6 +132,10 @@ h3 {
     width: 60%;
 }
 
+.projectLink {
+    margin-top: 40px;
+}
+
 .project1 .projectImg,
 .project3 .projectImg {
     margin-right: -50px;
@@ -118,3 +143,27 @@ h3 {
 .project2 .projectImg {
     margin-left: -50px;
 }
+
+main button {
+    padding: 0;
+}
+
+.project1 button,
+.project3 button {
+    margin-right: 10px;
+}
+
+.project2 button {
+    margin-left: 10px;
+}
+
+main button a {
+    border: 2px solid black;
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+main button a:hover {
+    background: $black;
+}
+
