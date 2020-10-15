@@ -1,170 +1,207 @@
+main {
+    button {
+        padding: 0;
+
+        a {
+            border: 2px solid black;
+            font-size: 1.8rem;
+            padding: 5px;
+        }
+
+        a:hover {
+            background: $black;
+        }
+    }  
+
+    h2 {
+        font-size: 3.0rem;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+    }
+
+    h2::after {
+        position: absolute;
+        content: '';
+        background: $greenStyle;
+        height: 3px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 30px;
+        width: 100%;
+    }
+
 /////* bio */////
-.bio {
-    background-color: $greenBackground;
-    padding: 100px 0;
-    width: 100%;
-}
+    .bio {
+        background-color: $greenBackground;
+        padding: 100px 0;
+        width: 100%;
+    }
 
-.bioContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
+    .bioContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-.bioContainer img {
-    width: 100%;
-    object-fit: contain;
-    margin-top: -225px;
-}
+        img {
+            width: 100%;
+            object-fit: contain;
+            margin-top: -225px;
+        }
 
-.bioContainer h2 {
-    margin-top: 50px;
-}
+        h2 {
+            margin-top: 50px;  
+        }
 
-.bioContainer p {
-    width: 500px;
-    text-align: center;
-    margin-bottom: 20px;
-}
+        p {
+            width: 700px;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+    }
 
 /////* skills */////
-.skills {
-    padding: 100px 0;
-}
+    .skills {
+        padding: 100px 0;
+    }
 
-.skills h2,
-.bio h2,
-.projects h2 {
-    position: relative;
-    display: inline-block;
-}
+    .skillsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.skills h2::after,
-.bio h2::after,
-.projects h2::after {
-    position: absolute;
-    content: '';
-    background: $greenStyle;
-    height: 3px;
-    margin: 0 auto;
-	left: 0;
-    right: 0;
-    top: 30px;
-    width: 100%;
-}
+    .skillsList {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 60%;
 
-.skillsContainer {
-    display: flex;
-    justify-content: space-between;
-}
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: calc(100%/4);
+        }
 
-.skillsList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 60%;
-}
-
-.skillsList li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    padding: 20px;
-}
-.skillsList i {
-    font-size: 5.5rem;
-    color: $black;
-}
+        i {
+            font-size: 5.5rem;
+            color: $black; 
+        }
+    }
 
 /////* projects */////
-.projects h2 {
-    margin-bottom: 100px;
-}
-h3 {
-    font-size: 2.5rem;
-}
+    h3 {
+        font-size: 2.5rem;
+    }
 
-.projects{
-    padding: 50px 0;
-}  
+    .projects {
+        padding: 50px 0;
 
-.project1,
-.project2,
-.project3 {
-    background-color: $greenBackground;
-    margin-bottom: 200px;
-    padding: 50px 0;
-}
+        h2 {    
+            margin-bottom: 100px;
+        }
 
-.project1,
-.project3 {
-    margin-left: 10%;
-    animation: fade-right;
-}
+        .project1,
+        .project2,
+        .project3 {
+            background-color: $greenBackground;
+            margin-bottom: 200px;
+            padding: 50px 0;
+        }
+        
+        .project1,
+        .project3 {
+            margin-left: 10%;
+        }
+        
+        .project2 {
+            margin-right: 10%;
+            text-align: right;
+        }
+        
+        .project1 .projectImg,
+        .project3 .projectImg {
+            margin-right: -50px;
+        }
 
-.project2 {
-    margin-right: 10%;
-    text-align: right;
-}
+        .project2 .projectImg {
+            margin-left: -50px;
+        }
 
-.projectContainer {
-    display: flex;
-    justify-content: space-between;
-    // height: 300px;
-}
+        .projectInfo {
+            width: 40%;
+        }
 
-.projectInfo {
-    width: 40%;
-}
+        .project1 button,
+        .project3 button {
+            margin-right: 10px;
+        }
+        
+        .project2 button {
+            margin-left: 10px;
+        }
 
-.projectContainer img {
-    width: 100%;
-    height: auto;
-    margin-top: -120px;
-}
 
-.projectImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 60%;
-}
+        .projectContainer {
+            display: flex;
+            justify-content: space-between;
 
-.projectLink {
-    margin-top: 40px;
-}
+            .projectImg {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 60%;
 
-.project1 .projectImg,
-.project3 .projectImg {
-    margin-right: -50px;
-}
-.project2 .projectImg {
-    margin-left: -50px;
-}
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-top: -120px;
+                }
 
-main button {
-    padding: 0;
-}
+                .projectLink {
+                    margin-top: 40px;
+                }
+            }
 
-.project1 button,
-.project3 button {
-    margin-right: 10px;
-}
+            
+        }
+    }  
 
-.project2 button {
-    margin-left: 10px;
-}
+/////* contact */////
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 150px;
+        
+        .contactContainer {
+            width: 40%;
+        }
 
-main button a {
-    border: 2px solid black;
-    font-size: 1.8rem;
-    padding: 5px;
-}
+        .contactList {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-main button a:hover {
-    background: $black;
+            li {
+      
+                i {
+                    color: $black;
+                    font-size: 4.5rem; 
+                }
+
+                i:hover {
+                    color: $greenStyle;
+                }
+
+            }
+        }
+        
+    }
 }
 

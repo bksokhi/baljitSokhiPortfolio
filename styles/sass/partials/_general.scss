@@ -8,55 +8,56 @@ html {
     color: #0D0D0D;
     background-color: #f7f7f7;
     scroll-behavior: smooth;
-}
-
-h1,
-h2,
-h3, 
-button {
-    font-family: 'Karla', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-button {
-    border: none;
-    padding: none;
-    background: none;
-}
 
 
-a {
-    text-decoration: none;
-    color: $black;
-}
-
-p {
-    font-size: 1.8rem;
-    line-height: 30px;
-}
-
-a:hover,
-i:hover {
-    color: $greenStyle;
-    transition: 0.5s;
-}
-
-.largeWrapper {
-    width: 90%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.wrapper {
-    width: 80%;
-    max-width: 1280px;
-    margin: 0 auto;
+    h1,
+    h2,
+    h3, 
+    button {
+        font-family: 'Karla', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    
+    button {
+        border: none;
+        padding: none;
+        background: none;
+    }
+    
+    
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+    
+    p {
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+    
+    a:hover,
+    i:hover {
+        color: $greenStyle;
+        transition: 0.5s;
+    }
+    
+    .largeWrapper {
+        width: 90%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+    .wrapper {
+        width: 80%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b36d7bc04c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
@@ -16,7 +17,7 @@
         <section class="banner">
             <div class="navBar largeWrapper">
                 <div class="logo">
-                    <img src="./assets/logoImg.png" alt="">
+                    <img src="./assets/logoImg.png" alt="Baljit Kaur Sokhi logo.">
                 </div>
                 <nav>
                     <i class="fas fa-bars burgerOpen"></i>
@@ -43,7 +44,7 @@
 
     <main>
         
-        <section data-aos="fade-up" data-aos-duration="1000"  class="bio" >
+        <section class="bio" data-aos="fade-up" data-aos-duration="1000"  >
             <div class="bioContainer wrapper">
                 
                 <!-- profile image -->
@@ -57,7 +58,7 @@
             
         </section>
 
-        <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500" >
+        <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="1000"  >
             <div class="skillsContainer wrapper">
                 <h2>Skills</h2>
             
@@ -98,18 +99,22 @@
                         <i class="fas fa-universal-access"></i>
                         <p>Accessibility</p>
                     </li>
+                    <li>
+                        <i class="fas fa-fire"></i>
+                        <p>Firebase</p>
+                    </li>
                 </ul>
             
             </div>
 
         </section>
 
-        <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+        <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000">
             <div class="wrapper">
                 <h2>My Work</h2>
             </div>
             
-            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="project1">
+            <div class="project1" data-aos="fade-left" data-aos-easing="ease-in-sine">
                 <!-- project preview -->
                 <!-- project title and description - tech used -->
                 <!-- project link -->
@@ -132,11 +137,9 @@
                         </div>
                     </div>
                 </div>
-                
-               
             </div>
 
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" class="project2">
+            <div class="project2" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
                 <!-- project preview -->
                 <!-- project title and description - tech used -->
                 <!-- project link -->
@@ -160,7 +163,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500" class="project3">
+            <div class="project3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="500">
                 <!-- project preview -->
                 <!-- project title and description - tech used -->
                 <!-- project link -->
@@ -183,34 +186,33 @@
                     
                 </div>
             </div>
-          
         </section>
 
-        <section class="blog wrapper">
-            <!-- link to medium blogs? -->
-        </section>
+        <section class="contact wrapper" id="contact" data-aos="fade-up" data-aos-duration="1000">
+            <div class="contactContainer">
+                <h2>Let's Talk!</h2>
+                <p>Thanks for taking a look at my page! If you'd like chat or just learn about how to make the perfect cup of chai, feel free to reach out!</p>
+                <p>sokhibaljit@gmail.com</p>
+            </div>
 
-    </main>
-
-    <footer>
-        <!-- contact info -->
-        <section class="contact wrapper" id="contact">
-            <ul class="contactList">
+            <!-- social links -->
+            <ul class="contactList"> 
                 <li><a href="https://twitter.com/Baljit_S26"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/baljitsokhi/"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="https://github.com/bksokhi"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://medium.com/@sokhibaljit"><i class="fab fa-medium-m"></i></a></li>
             </ul>
         </section>
-        <!-- social links -->
-        <!-- resume download -->
+    </main>
+
+    <footer>
         <p>© Baljit Sokhi 2020</p>
     </footer>
 
 
 <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./scripts.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </body>
 

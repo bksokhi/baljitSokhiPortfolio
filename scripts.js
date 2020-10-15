@@ -1,10 +1,6 @@
 $(document).ready(function () {
-
-
-AOS.init();
- 
-
-
+    AOS.init();
+    
     $(".burgerOpen").on("click", function () {
         $(".navMenu").css({ width: "200px", padding: "20px" });
         $(".burgerOpen").css({ display: "none" });
@@ -18,6 +14,10 @@ AOS.init();
     $(window).on("scroll", function () {
         $(".banner").css({ background: "rgba(13, 13, 13, 0.8)", color: "white", transition: "2s"});
         $(".burgerOpen").css({ color: "white" });
+    });
+
+    $(".burgerOpen").hover(function () {
+        $(this).css({ color: "#b4c6be" });
     });
 
 });

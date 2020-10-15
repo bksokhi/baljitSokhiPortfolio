@@ -1,97 +1,102 @@
-/* nav bar */
-
+/////* nav bar */////
 header {
     height: 95vh;
     position: relative;
-}
 
-.banner {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background: none;
-}
+    ///// banner /////
+    .banner {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background: none;
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 0;
-    font-size: 1.5rem;
-}
+        ///// navigation /////
+        .navBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 0;
+            font-size: 1.5rem;
 
-.navBar img {
-    width: 50px;
-}
-
-.navBar i {
-    font-size: 25px;
-}
-
-.navMenu {
-    height: 100%;
-    width: 0px; //200px
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgba(13, 13, 13, 0.8);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    transition: 0.5s;
-    padding: 0px; //20px
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+            i:hover,
+            a:hover {
+            letter-spacing: 2px;
+            color: $greenStyle;
+            }
     
-}
-nav li {
-    margin-bottom: 15px
-}
+            .logo img {
+                width: 50px;
+            }
+    
+            i {
+                font-size: 25px; 
+            }
+        }
 
-nav a {
-    color: white;
-    padding: 5px;
-}
+        nav {
+            li {
+                margin-bottom: 15px
+            }
 
-nav a:hover {
-    letter-spacing: 2px;
-}
+            a {
+                color: white;
+                padding: 5px;
+            }
 
-.burgerOpen,
-.burgerClose {
-    font-size: 1.8rem;
-    color: $black;
-}
-.burgerClose {
-    color: white;
-}
+            .navMenu {
+                height: 100%;
+                width: 0px; //200px
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: rgba(13, 13, 13, 0.8);
+                overflow-x: hidden;
+                overflow-y: scroll;
+                transition: 0.5s;
+                padding: 0px; //20px
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
 
+            ///// burger icons icon /////
+            .burgerOpen,
+            .burgerClose {
+                font-size: 2.5rem;
+                color: $black;
+            }
 
-/*/hero */
+            .burgerClose {
+                color: white;
+            }
+        }
+    }
+    
+/////* hero */////
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px;
+        height: 95%;
 
+        h1 {
+            font-size: 4.5rem;
+            letter-spacing: 15px;
+        }
+        
+        h1 span {
+            color: $greenStyle;
+        }
+        
+        h2 {
+            font-size: 3.0rem;
+            letter-spacing: 5px;
+        }
+    }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 30px;
-    height: 90%;
-}
-
-h1 {
-    font-size: 4.0rem;
-    letter-spacing: 15px;
-}
-
-h1 span {
-    color: $greenStyle;
-}
-
-h2 {
-    font-size: 2.5rem;
-    letter-spacing: 5px;
 }
 
 /////* footer */////
@@ -99,19 +104,5 @@ footer {
     text-align: center;
     color: white;
     background-color: $black;
-    padding: 10px 0;
-}
-
-.contactList{
-    display: flex;
-    justify-content: space-between;
-}
-
-.contactList li i {
-    color: white;
-    font-size: 2.0rem;
-}
-
-.contactList li i:hover{
-    color: $greenStyle;
+    padding: 1px 0;
 }
