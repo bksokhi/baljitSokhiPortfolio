@@ -450,8 +450,6 @@ header .hero h2::after {
           animation-direction: normal;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-transition: all 10s ease-in;
-  transition: all 10s ease-in;
 }
 
 footer {
@@ -835,5 +833,11 @@ main .contact .contactList i:hover {
 @media (max-width: 500px) {
   .skills .skillsList li {
     width: calc(100%/3);
+  }
+}
+
+@media (max-width: 418px) {
+  header .hero h2::after {
+    top: 75px;
   }
 }

@@ -58,8 +58,6 @@
             .skillsList {
                 width: 100%;
             }
-
-            
         }
 
         .bioContainer {
@@ -94,5 +92,17 @@
         .skillsList li {
             width: calc(100%/3);
         }
+    }
+}
+
+@media (max-width: 418px) {
+    header {
+        .hero {
+            h2::after {
+                top: 75px;
+            }
+
+        }
+
     }
 }
