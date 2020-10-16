@@ -22,7 +22,8 @@ header {
             .logo img {
                 width: 50px;
             }
-    
+        
+            ///// open/close icons /////
             .burgerOpen,
             .burgerClose{
                 font-size: 30px; 
@@ -33,6 +34,7 @@ header {
                 color: $greenStyle;
             }
 
+             ///// pop out menu /////
             nav {
                 li {
                     margin: 20px 0;
@@ -65,8 +67,6 @@ header {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
-
-                    
                 }
             }
         }
@@ -80,12 +80,14 @@ header {
         justify-content: center;
         line-height: 30px;
         height: 100%;
+        text-align: center;
 
         h1 {
             font-size: 4.5rem;
             letter-spacing: 15px;
         }
-        
+
+         ///// middle name style /////
         h1 span {
             color: $greenStyle;
         }
@@ -93,9 +95,37 @@ header {
         h2 {
             font-size: 3.0rem;
             letter-spacing: 5px;
+            position: relative;
+        }
+         ///// h2 underline animation /////
+        @keyframes underline {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        h2::after {
+            position: absolute;
+            content: '';
+            background: rgba(180, 198, 190, 0.50);
+            border-radius: 4px;
+            height: 4px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 40px;
+            animation: underline;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            transition: all 10s ease-in;
         }
     }
-
 }
 
 /////* footer */////

@@ -49,9 +49,26 @@
         .skills {
             .skillsContainer {
                 flex-direction: column;
+
+                h2 {
+                    width: 75px;
+                }
             }
 
             .skillsList {
+                width: 100%;
+            }
+
+            
+        }
+
+        .bioContainer {
+            img {
+                margin-top: -175px;
+                width: 100%;
+            }
+
+            p {
                 width: 100%;
             }
         }
@@ -71,14 +88,11 @@
     }
 }
 
+@media (max-width: 500px) {
+    .skills {
 
-
-// /* Portrait tablet and small desktops */
-// @media (max-width: 940px) {
-// }
-// /* Landscape phone to portrait tablet */
-// @media (max-width: 768px) {
-// }
-// /* Landscape phones and down */
-// @media (max-width: 480px) {
-// }
+        .skillsList li {
+            width: calc(100%/3);
+        }
+    }
+}
