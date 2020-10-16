@@ -3,15 +3,29 @@ main {
         padding: 0;
 
         a {
-            border: 2px solid black;
+            border: 2px solid $black;
             font-size: 1.8rem;
             padding: 5px;
+
+            border-radius: 0px;
+            background: linear-gradient(145deg, #ffffff, #e5e6e6);
+            box-shadow:  1px 1px 10px #666666, 
+                        -1px -1px 5px #ffffff;
         }
 
         a:hover {
             background: $black;
         }
+
+
+        a:active {
+        border-radius: 0px;
+        background: #feffff;
+        box-shadow: inset 2px 2px 10px #666666, 
+                    inset -2px -2px 5px #ffffff;
+        }
     }  
+
 
     h2 {
         font-size: 3.0rem;
@@ -99,7 +113,6 @@ main {
     }
 
     .projects {
-        padding: 50px 0;
 
         h2 {    
             margin-bottom: 100px;
@@ -117,11 +130,13 @@ main {
         .project1,
         .project3 {
             margin-left: 10%;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.47);
         }
         
         .project2 {
             margin-right: 10%;
             text-align: right;
+            box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.47);
         }
 
         ///// image offset /////

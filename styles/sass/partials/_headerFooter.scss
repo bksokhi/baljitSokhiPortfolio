@@ -23,8 +23,9 @@ header {
                 width: 50px;
             }
     
-            .burgerOpen{
-                font-size: 25px; 
+            .burgerOpen,
+            .burgerClose{
+                font-size: 30px; 
                 color: white;
             }
 
@@ -67,18 +68,8 @@ header {
 
                     
                 }
-    
-                ///// burger icons icon /////
-                .burgerOpen,
-                .burgerClose {
-                    font-size: 2.5rem;
-                    color: white;
-                }
             }
-
-
         }
-
     }
     
 /////* hero */////
