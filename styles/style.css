@@ -286,8 +286,8 @@ html p {
 html a:hover,
 html i:hover {
   color: #b4c6be;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 html .largeWrapper {
@@ -311,7 +311,8 @@ header .banner {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background: none;
+  background: rgba(13, 13, 13, 0.8);
+  color: white;
 }
 
 header .banner .navBar {
@@ -328,30 +329,36 @@ header .banner .navBar {
   font-size: 1.5rem;
 }
 
-header .banner .navBar i:hover,
-header .banner .navBar a:hover {
-  letter-spacing: 2px;
-  color: #b4c6be;
-}
-
 header .banner .navBar .logo img {
   width: 50px;
 }
 
-header .banner .navBar i {
+header .banner .navBar .burgerOpen {
   font-size: 25px;
+  color: white;
 }
 
-header .banner nav li {
-  margin-bottom: 15px;
+header .banner .navBar .burgerOpen:hover {
+  color: #b4c6be;
 }
 
-header .banner nav a {
+header .banner .navBar nav li {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+header .banner .navBar nav a {
   color: white;
   padding: 5px;
 }
 
-header .banner nav .navMenu {
+header .banner .navBar nav a:hover,
+header .banner .navBar nav i:hover {
+  letter-spacing: 2px;
+  color: #b4c6be;
+}
+
+header .banner .navBar nav .navMenu {
   height: 100%;
   width: 0px;
   position: fixed;
@@ -375,13 +382,9 @@ header .banner nav .navMenu {
           align-items: flex-start;
 }
 
-header .banner nav .burgerOpen,
-header .banner nav .burgerClose {
+header .banner .navBar nav .burgerOpen,
+header .banner .navBar nav .burgerClose {
   font-size: 2.5rem;
-  color: #0D0D0D;
-}
-
-header .banner nav .burgerClose {
   color: white;
 }
 
@@ -400,7 +403,7 @@ header .hero {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 30px;
-  height: 95%;
+  height: 100%;
 }
 
 header .hero h1 {
@@ -442,7 +445,6 @@ main h2 {
   font-size: 3.0rem;
   position: relative;
   display: inline-block;
-  margin: 0;
 }
 
 main h2::after {
@@ -491,7 +493,7 @@ main .bioContainer h2 {
 }
 
 main .bioContainer p {
-  width: 700px;
+  width: 70%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -641,27 +643,52 @@ main .contact {
   padding-bottom: 150px;
 }
 
+main .contact h2 {
+  margin-top: 0;
+}
+
 main .contact .contactContainer {
-  width: 40%;
+  width: 50%;
+}
+
+main .contact .contactContainer .email {
+  text-decoration: underline;
 }
 
 main .contact .contactList {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 60%;
 }
 
-main .contact .contactList li i {
+main .contact .contactList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+  width: 50%;
+}
+
+main .contact .contactList i {
   color: #0D0D0D;
-  font-size: 4.5rem;
+  font-size: 4.0rem;
 }
 
-main .contact .contactList li i:hover {
+main .contact .contactList i:hover {
   color: #b4c6be;
 }

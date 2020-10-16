@@ -8,7 +8,8 @@ header {
         position: fixed;
         width: 100%;
         z-index: 1;
-        background: none;
+        background: rgba(13, 13, 13, 0.8);
+        color: white;
 
         ///// navigation /////
         .navBar {
@@ -17,60 +18,67 @@ header {
             align-items: center;
             padding: 7px 0;
             font-size: 1.5rem;
-
-            i:hover,
-            a:hover {
-            letter-spacing: 2px;
-            color: $greenStyle;
-            }
     
             .logo img {
                 width: 50px;
             }
     
-            i {
+            .burgerOpen{
                 font-size: 25px; 
-            }
-        }
-
-        nav {
-            li {
-                margin-bottom: 15px
-            }
-
-            a {
-                color: white;
-                padding: 5px;
-            }
-
-            .navMenu {
-                height: 100%;
-                width: 0px; //200px
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: rgba(13, 13, 13, 0.8);
-                overflow-x: hidden;
-                overflow-y: scroll;
-                transition: 0.5s;
-                padding: 0px; //20px
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-            }
-
-            ///// burger icons icon /////
-            .burgerOpen,
-            .burgerClose {
-                font-size: 2.5rem;
-                color: $black;
-            }
-
-            .burgerClose {
                 color: white;
             }
+
+            .burgerOpen:hover {
+                color: $greenStyle;
+            }
+
+            nav {
+                li {
+                    margin-bottom: 20px;
+                    font-size: 1.8rem;
+                }
+    
+                a {
+                    color: white;
+                    padding: 5px;
+                }
+
+                a:hover,
+                i:hover {
+                    letter-spacing: 2px;
+                    color: $greenStyle;
+                }
+    
+                .navMenu {
+                    height: 100%;
+                    width: 0px; //200px
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    right: 0;
+                    background-color: rgba(13, 13, 13, 0.8);
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    transition: 0.5s;
+                    padding: 0px; //20px
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    
+                }
+    
+                ///// burger icons icon /////
+                .burgerOpen,
+                .burgerClose {
+                    font-size: 2.5rem;
+                    color: white;
+                }
+            }
+
+
         }
+
     }
     
 /////* hero */////
@@ -80,7 +88,7 @@ header {
         align-items: center;
         justify-content: center;
         line-height: 30px;
-        height: 95%;
+        height: 100%;
 
         h1 {
             font-size: 4.5rem;
