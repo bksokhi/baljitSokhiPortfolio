@@ -73,10 +73,11 @@ main {
 
     .skillsList {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         width: 60%;
+        text-align: center;
 
         li {
             display: flex;
@@ -112,6 +113,7 @@ main {
             padding: 50px 0;
         }
         
+        ///// green background /////
         .project1,
         .project3 {
             margin-left: 10%;
@@ -121,7 +123,8 @@ main {
             margin-right: 10%;
             text-align: right;
         }
-        
+
+        ///// image offset /////
         .project1 .projectImg,
         .project3 .projectImg {
             margin-right: -50px;
@@ -129,10 +132,6 @@ main {
 
         .project2 .projectImg {
             margin-left: -50px;
-        }
-
-        .projectInfo {
-            width: 40%;
         }
 
         .project1 button,
@@ -148,6 +147,11 @@ main {
         .projectContainer {
             display: flex;
             justify-content: space-between;
+            width: 80%;
+            
+            .projectInfo {
+                width: 40%;
+            }
 
             .projectImg {
                 display: flex;
@@ -157,7 +161,6 @@ main {
 
                 img {
                     width: 100%;
-                    height: auto;
                     margin-top: -120px;
                 }
 
@@ -165,8 +168,6 @@ main {
                     margin-top: 40px;
                 }
             }
-
-            
         }
     }  
 
@@ -175,7 +176,7 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
 
         h2 {
             margin-top: 0;
@@ -191,7 +192,7 @@ main {
 
         .contactList {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
             width: 60%;

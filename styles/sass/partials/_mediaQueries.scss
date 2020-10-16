@@ -1,0 +1,84 @@
+@media (max-width: 1065px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        .projects {
+            .projectContainer {
+                flex-direction: column;
+    
+                .projectInfo,
+                .projectImg {
+                    width: 100%;
+                }
+    
+                .projectImg img {
+                    width: 100%;
+                    margin-top: 0px;
+                }
+            }
+
+            .project2 {
+                .projectInfo {
+                    order: 1;
+                }
+
+                .projectImg {
+                    order: 2;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 725px) {
+    html {
+        font-size: 45%;
+    }
+    
+    header {
+        .hero h1 {
+            line-height: 40px;
+        }
+    }
+    main {
+        .skills {
+            .skillsContainer {
+                flex-direction: column;
+            }
+
+            .skillsList {
+                width: 100%;
+            }
+        }
+
+        .contact {
+            flex-direction: column;
+
+            .contactContainer,
+            .contactList {
+                width: 100%;
+            }
+
+            .contactList {
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+// /* Portrait tablet and small desktops */
+// @media (max-width: 940px) {
+// }
+// /* Landscape phone to portrait tablet */
+// @media (max-width: 768px) {
+// }
+// /* Landscape phones and down */
+// @media (max-width: 480px) {
+// }
